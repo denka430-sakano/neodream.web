@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="有限会社NeoDream - 大阪のアクアリウムレンタル・空間演出">
+    <title>有限会社NeoDream｜アクアリウムレンタル・空間演出</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container header-inner">
+            <div class="logo">
+                <a href="#"><img src="Image/logo.png" alt="NeoDream Logo"></a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#concept">CONCEPT</a></li>
+                    <li><a href="#service">SERVICE</a></li>
+                    <li><a href="#case">CASE STUDY</a></li>
+                    <li><a href="#flow">FLOW</a></li>
+                    <li><a href="#company">COMPANY</a></li>
+                    <li><a href="#contact" class="btn-contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-img-container">
+            <img src="Image/hero.jpg" alt="Aquarium Space Design" class="hero-img">
+        </div>
+        <div class="hero-content">
+            <h1>空間演出で価値を高める</h1>
+            <p>大阪のアクアリウムレンタル・リースから設計・施工まで</p>
+        </div>
+    </section>
+
+    <section id="concept" class="section">
+        <div class="container">
+            <h2 class="section-title">CONCEPT</h2>
+            <div class="concept-flex">
+                <div class="concept-text">
+                    <h3>水槽は「見るもの」から「空間を創るもの」へ</h3>
+                    <p>アクアリウムは単なる観賞魚の飼育セットではありません。私たちは、オフィス、クリニック、店舗、そして個人宅まで、その場所の価値を最大化する「空間演出」としての水槽をご提案します。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="service" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">SERVICE</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="Image/service1.jpg" alt="レンタル・メンテナンス">
+                    <h3>レンタル・メンテナンス</h3>
+                    <p>月額定額制で、常に美しい状態の水槽を維持します。餌やり以外の管理はすべてお任せください。</p>
+                </div>
+                <div class="card">
+                    <img src="Image/service2.jpg" alt="設計・施工">
+                    <h3>設計・施工</h3>
+                    <p>建築・内装に合わせた埋め込み水槽や、大型水槽の設計・施工も承ります。</p>
+                </div>
+                <div class="card">
+                    <img src="Image/service3.jpg" alt="イベント演出">
+                    <h3>短期イベント演出</h3>
+                    <p>展示会や撮影、パーティーなど、短期間のスポット設置にも対応可能です。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="company" class="section">
+        <div class="container">
+            <h2 class="section-title">COMPANY</h2>
+            <table class="company-table">
+                <tr><th>会社名</th><td>有限会社NeoDream（ネオドリーム）</td></tr>
+                <tr><th>所在地</th><td>大阪府柏原市（※詳細住所を追記してください）</td></tr>
+                <tr><th>事業内容</th><td>アクアリウムレンタル、水景デザイン、空間演出、水槽保守管理</td></tr>
+            </table>
+        </div>
+    </section>
+
+    <section id="contact" class="section bg-dark">
+        <div class="container">
+            <h2 class="section-title text-white">CONTACT</h2>
+            <p class="text-center text-white">導入のご相談、お見積もりは無料です。お気軽にお問い合わせください。</p>
+            
+            <form action="https://formspree.io/f/mbdpvnjd" method="POST" class="contact-form">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="お名前 / 会社名" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="メールアドレス" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" rows="6" placeholder="お問い合わせ内容" required></textarea>
+                </div>
+                <input type="text" name="_gotcha" style="display:none">
+                <button type="submit" class="submit-btn">この内容で送信する</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 NeoDream All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
